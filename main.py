@@ -81,7 +81,6 @@ def main(num):
     # The function is called check_even_odd() and takes a single integer parameter.
     # The function returns a string "odd" or "even".
     # The function is imported at the top of the script using "from lib_s import *".
-    # Check if the number is odd or even and print the result.
     Parsing_bar = "1"
     if num == 1:
         print(Parsing_bar)
