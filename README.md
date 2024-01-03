@@ -1,11 +1,15 @@
-# Parsing Bar
+# Prime Factor
 
-Parsing Bar is a Python application for getting number parsing bar.
+Prime Factor is a Python application for Integer factorization.
 
 ## Usage
-
+Calling main Script.
 ```shell
-> python ./parsing_bar.py [Number]
+> python ./prime-factor.py [Number]
+```
+Calling application(.exe).
+```shell
+> ./prime-factor.exe [Number]
 ```
 
 ## Contributing
