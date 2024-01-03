@@ -6,7 +6,6 @@ def main(num):
     # The function is called check_even_odd() and takes a single integer parameter.
     # The function returns a string "odd" or "even".
     # The function is imported at the top of the script using "from lib_s import *".
-    # Check if the number is odd or even and print the result.
     Parsing_bar = "1"
     if num == 1:
         print(Parsing_bar)
@@ -35,6 +34,10 @@ def main(num):
                 num = num // 13
             if check_prime(num):
                 Parsing_bar += "*" + str(num)
+                print(Parsing_bar)
+                break
+            elif num == 1:
+                pass
             else:
                 Parsing_bar += "*" + str(check_perfect(num))
                 num = num // check_perfect(num)
