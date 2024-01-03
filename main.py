@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from lib_s import *
 
 def main(num):
@@ -72,7 +71,6 @@ def main(num):
                 Parsing_bar += "*" + str(num)
             if eval(Parsing_bar) == pr:
                 print(Parsing_bar) 
-=======
 from lib_s import *
 
 def main(num):
@@ -146,5 +144,4 @@ def main(num):
                 Parsing_bar += "*" + str(num)
             if eval(Parsing_bar) == pr:
                 print(Parsing_bar) 
->>>>>>> b4557b3 (Edited)
                 break
