@@ -9,14 +9,13 @@ def main(num):
     Parsing_bar = "1"
     if num == 1:
         print(Parsing_bar)
-        return
+        return Parsing_bar
     if check_prime(num):
         print(Parsing_bar + "*" + str(num))
-        return
+        return Parsing_bar + "*" + str(num)
     if check_even_odd(num) == "Odd":
         pr = num
         while check_prime(num) == False:
-            Parsing_bar = "1"
             if check_divisible_by_3(num):
                 Parsing_bar += "*3"
                 num = num // 3
@@ -35,7 +34,7 @@ def main(num):
             if check_prime(num):
                 Parsing_bar += "*" + str(num)
                 print(Parsing_bar)
-                break
+                return Parsing_bar
             elif num == 1:
                 pass
             else:
@@ -45,7 +44,7 @@ def main(num):
                 Parsing_bar += "*" + str(num)
             if eval(Parsing_bar) == pr:
                 print(Parsing_bar)
-                break
+                return Parsing_bar
     else:
         pr = num
         while check_prime(num) == False:
@@ -69,6 +68,15 @@ def main(num):
                 num = num // 13
             if check_prime(num):
                 Parsing_bar += "*" + str(num)
+                print(Parsing_bar)
+                return Parsing_bar
+            elif num == 1:
+                pass
+            else:
+                Parsing_bar += "*" + str(check_perfect(num))
+                num = num // check_perfect(num)
+            if check_prime(num):
+                Parsing_bar += "*" + str(num)
             if eval(Parsing_bar) == pr:
                 print(Parsing_bar) 
-                break
+                return Parsing_bar
