@@ -1,7 +1,13 @@
 import argparse
 import math as mt
 
-parser = argparse.ArgumentParser(description="", formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+parser = argparse.ArgumentParser(description="Takes a number and returns the Prime-Factor bar.", formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+
+parser.add_argument("number", help="Number that takes")
+args = parser.parse_args()
+
+config = vars(args)
+num = int(config['number'])
 def check_prime(number):
    if number < 2:
        return False
@@ -25,5 +31,6 @@ def main(num):
 def generator2str(number):
     return '*'.join(map(lambda x: str(x), main(number)))
 if __name__ == '__main__':
+    print(generator2str(num))
     pass
 
