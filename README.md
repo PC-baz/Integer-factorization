@@ -5,11 +5,11 @@ Prime Factor is a Python application for Integer factorization.
 ## Usage
 Calling main Script.
 ```shell
-> python ./prime-factor.py [-h] number
+> python ./main.py [-h] number
 ```
 Calling application(.exe).
 ```shell
-> ./prime-factor.exe [-h] number
+> ./Prime-Factor.exe [-h] number
 ```
 
 ## Contributing
